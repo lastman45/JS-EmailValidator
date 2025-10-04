@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator </title>
+    <link rel="stylesheet" href="EmailValidator.css">
+</head>
+<body>
+     <!-- First Email Validator -->
+    <div class="container">
+        <label for="emailid">Email</label>
+        <input type="email" id="emailid" oninput="checker()" placeholder="Enter your email">
+        <div id="icon"></div>
+        <p id="error-msg">Please Enter A Valid Email</p>
+    </div>
+
+    <!-- Second Email Validator -->
+    <div class="hero">
+        <div class="input-group">
+            <label id="email-label">Email</label>
+            <input type="email" spellcheck="false" id="email-field" onkeyup="validateEmail()" onfocus="focusInput()" onblur="blurInput()">
+            <span id="error-msg-2">Invalid Email Address</span>
+        </div>
+    </div>
+
+
+
+    <script src="EmailValidator.js"></script>
+</body>
+</html>
